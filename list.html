@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #list1>li:nth-of-type(odd){
+            color: red;
+            font-weight: bolder;
+        }
+        #list1+ul>li::marker{
+          color: violet;
+          font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+    <ul>
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+        <li>item-6</li>
+        <li>item-7</li>
+        <li>item-8</li>
+        <li>item-9</li>
+        <li>item-10</li>
+    </ul>
+</body>
+</html>
