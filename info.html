@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            color: white;
+            background-color: red;
+        }
+        
+        h3{
+            display: none;
+            width: 200px;
+           height: 200px;
+           border: 1px solid;
+            background-color: red;
+           }
+        .con:active button{
+            display: none;
+        }
+        .con:active h3{
+            display: block;
+        }
+    </style>
+</head>
+    
+    <body><div class="con"><button>Read Info</button> <h3>This is the info</h3></div>
+    
+</body>
+</html>
