@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c{
+            background-color: rgb(29, 5, 107);
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            grid-area: 1/1/2/3;
+        }
+        .c1{
+            width: 100%;
+            height: 400px;
+            background-color: rgb(73, 73, 223);
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            box-sizing: border-box;
+            grid-area: 1/3/2/5;
+        }
+        .c2{
+            color: white;
+            padding: 10px;
+        }
+        .c3{
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            place-items: center;
+            box-sizing: border-box;
+            grid-area: 2/1/3/5;
+        }
+      #i{
+        display: flex;
+        gap: 10px;
+      }
+     #i1{
+        display: flex;
+        gap: 15px;
+     }
+     .contain{
+        max-width: 1500px;
+     }
+     footer{
+        display: grid;
+       
+     }
+
+     @media (width <= 1050px) {
+        .c1{
+     grid-area: 1/1/2/5;
+        }
+        .c{
+     grid-area: 2/1/3/5;
+        }
+        .c3{
+     grid-area: 3/1/4/5;
+        }
+     }
+     @media (width <= 550px) {
+        .c1{
+     grid-area: 2/1/3/5;
+        }
+        .c{
+     grid-area: 3/1/4/5;
+        }
+        .c3{
+     grid-area: 1/1/2/5;
+        }
+     }
+
+    </style>
+</head>
+<body class="contain">
+    <footer>
+        <div class="c"><img src="https://th.bing.com/th/id/OIP.YxJ2xI6kOBSLrIbVoZtPTgHaHa?w=177&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt=""/>
+        </div>
+        <div class="c1">
+            <div>
+            <h2 class="c2">Shop</h2>
+            <div class="c2">Gift Cards</div>
+            <div class="c2">Etsy Registry</div>
+            <div class="c2">Sitemap</div>
+            <div class="c2">Etsy blog</div>
+            <div class="c2">Etsy United Kingdom</div>
+            <div class="c2">Etsy Germany</div>
+            <div class="c2">Etsy Canada</div>
+        </div>
+        <div>
+            <h2 class="c2">Sell</h2>
+            <div class="c2">Sell on Etsy</div>
+            <div class="c2">Teams</div>
+            <div class="c2">Forums</div>
+            <div class="c2">Affiliate & Creators</div>
+            </div>
+            <div>
+            <h2 class="c2">About</h2>
+            <div class="c2">Etsy,Inc.</div>
+            <div class="c2">Policies</div>
+            <div class="c2">Investors</div>
+            <div class="c2">Careers</div>
+            <div class="c2">Press</div>
+            <div class="c2">Impact</div>
+            <div class="c2">Legal imprint</div>
+            </div>
+            <div>
+                <h2 class="c2">Shop</h2>
+                <div class="c2">Gift Cards</div>
+                <div class="c2">Etsy Registry</div>
+                <div class="c2">Sitemap</div>
+                <div class="c2">Etsy blog</div>
+                <div class="c2">Etsy United Kingdom</div>
+                <div class="c2">Etsy Germany</div>
+                <div class="c2">Etsy Canada</div>
+            </div>
+        </div>
+
+        <div class="c3"> 
+            <div id="i">
+            <img width="30px" height="30px" style="border-radius: 50%;" src="https://th.bing.com/th?q=India+Flag&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt=""/>
+           <div>India</div><div>|</div><div>English IN</div><div>|</div><div>(INR)</div>
+        </div>
+      <div id="i1">
+    <div>© 2024 Etsy, Inc.</div>
+    <div>Terms of Use</div>
+    <div> Privacy</div>
+    <div> Interest-based ads</div>
+    <div> Local Shops </div>
+    <div> Regions</div>
+      </div>
+
+        </div>
+    </footer>
+</body>
+</html>
