@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes a {
+            100%{
+                transform: translateX(100vw);
+            }
+        }
+        @keyframes a1 {
+            100%{
+                transform: translateX(-50vw);
+            }
+        }
+        .c{
+            width: 50%;
+            height: 80px;
+           border-radius: 10px;
+            background: linear-gradient(to right, rgb(6, 6, 231), pink);
+            margin: 20px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.c:nth-of-type(1){
+    position: relative;
+    right: 100vw;
+    animation: a 2s forwards;
+}
+.c:nth-of-type(2){
+    position: relative;
+    left: 100vw;
+    animation: a1 2s forwards;
+}
+.c:nth-of-type(3){
+    position: relative;
+    right: 100vw;
+    animation: a 2s forwards;
+}
+.c:nth-of-type(4){
+    position: relative;
+    left: 100vw; 
+    animation: a1 2s forwards;
+}
+
+        
+    </style>
+</head>
+<body>
+    <div class="c">Box-1</div>
+    <div class="c">Box2</div>
+    <div class="c">Box-3</div>
+    <div class="c">Box-4</div>
+</body>
+</html>
