@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes a1 {
+           
+            100%{
+                transform: translateX(500px);
+            }
+        }
+        @keyframes a {
+            100%{
+                transform: translateX(-500px);
+            }
+        }
+       body{
+        background: linear-gradient(rgb(255, 102, 0), 10%, pink);
+        display: flex;
+        justify-content: center;
+        
+       }
+       img{
+        width: 20vw;
+        height: 90vh;
+       }
+       img:nth-of-type(1){
+         animation: a1 3s infinite;
+       }
+       img:nth-of-type(2){
+        animation: a 3s infinite;
+    }
+    </style>
+</head>
+<body>
+     <img src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png" alt="">
+     <img src="https://pngimg.com/d/tom_and_jerry_PNG58.png" alt="">
+</body>
+</html>
