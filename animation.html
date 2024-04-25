@@ -5,37 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        @keyframes a1 {
+        @keyframes a{
+            100%{
+                transform: scale(6);
+            }
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
            
-            100%{
-                transform: translateX(500px);
-            }
         }
-        @keyframes a {
-            100%{
-                transform: translateX(-500px);
-            }
+        .c{
+            width: 200px;
+            height: 200px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: 5px solid rgb(92, 92, 66);
+             animation: a 3s infinite;
         }
-       body{
-        background: linear-gradient(rgb(255, 102, 0), 10%, pink);
-        display: flex;
-        justify-content: center;
-        
-       }
-       img{
-        width: 20vw;
-        height: 90vh;
-       }
-       img:nth-of-type(1){
-         animation: a1 3s infinite;
-       }
-       img:nth-of-type(2){
-        animation: a 3s infinite;
-    }
     </style>
 </head>
 <body>
-     <img src="https://i.pinimg.com/originals/03/a4/d5/03a4d55748dfefa852df76b085708c0a.png" alt="">
-     <img src="https://pngimg.com/d/tom_and_jerry_PNG58.png" alt="">
+    <div class="c"></div>
 </body>
 </html>
